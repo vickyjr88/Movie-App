@@ -1,0 +1,14 @@
+ul.classic {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.classic a {
+  color: #343434;
+}
+
+ul.classic a:hover {
+  text-decoration: none;
+  color: #cacaca;
+}

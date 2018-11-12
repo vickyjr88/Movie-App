@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col">
+    <h2>Featured Movies</h2>
+  </div>
+</div>
+<div class="row mb-5">
+  <div class="col-md-4">
+    <img src="{{movie_a.Poster}}" alt="{{movie_a.Title}}">
+  </div>
+  <div class="col-md-8" *ngIf="fmoviea">
+    <h3>{{movie_a.Title}}</h3>
+    <h4>{{movie_a.Type}}</h4>
+    <p><b>Year:</b>{{movie_a.Year}}</p>
+    <p><b>Awards</b></p>
+    <p>{{movie_a.Awards}}</p>
+    <p><b>Plot</b></p>
+    <p>{{movie_a.Plot}}</p>
+    <a routerLink="/movie/{{movie_a.imdbID}}" class="btn">Details</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8" *ngIf="fmovieb">
+    <h3>{{movie_b.Title}}</h3>
+    <h4>{{movie_b.Type}}</h4>
+    <p><b>Year:</b>{{movie_b.Year}}</p>
+    <p><b>Awards</b></p>
+    <p>{{movie_b.Awards}}</p>
+    <p><b>Plot</b></p>
+    <p>{{movie_b.Plot}}</p>
+    <a routerLink="/movie/{{movie_b.imdbID}}" class="btn">Details</a>
+  </div>
+  <div class="col-md-4">
+    <img src="{{movie_b.Poster}}" alt="{{movie_b.Title}}">
+  </div>
+</div>

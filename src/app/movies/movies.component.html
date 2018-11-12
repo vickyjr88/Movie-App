@@ -1,0 +1,9 @@
+<h3>Authors Picks</h3>
+<div class="row">
+  <div class="col-md-3 p-2"  *ngFor="let movie of movies">
+    <h4>{{movie.Type}}</h4>
+    <img src="{{movie.Poster}}" alt="{{movie.Title}}">
+    <p routerLink="/movie/{{movie.imdbID}}">{{movie.Year}} <br>
+      {{movie.Title}}</p>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<h3>Top Movies</h3>
+<ul class="classic">
+  <li *ngFor="let movie of movies"><a routerLink="/movie/{{movie.imdbID}}">{{movie.Title}}</a></li>
+</ul>
