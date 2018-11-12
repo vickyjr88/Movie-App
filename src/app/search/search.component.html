@@ -1,9 +1,11 @@
 <h3>You searched for: {{s}}</h3>
-<div class="row">
-  <div class="col-md-3 p-2"  *ngFor="let movie of movies">
-    <h4>{{movie.Type}}</h4>
-    <img src="{{movie.Poster}}" alt="{{movie.Title}}">
-    <p routerLink="/movie/{{movie.imdbID}}">{{movie.Year}} <br>
-      {{movie.Title}}</p>
+<div class="row"  *ngFor="let movie of movies">
+  <div class="col-md-1">
+    <img src="{{movie.Poster}}" alt="">
+  </div>
+  <div class="col-md-11">
+    <h5><a  routerLink="/movie/{{movie.imdbID}}">{{movie.Title}} - {{movie.Year}}</a></h5>
+    <p><a  routerLink="/movie/{{movie.imdbID}}">{{movie.Type}}</a></p>
+    <hr>
   </div>
 </div>
